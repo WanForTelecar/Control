@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Contrl</name>
+    <description>
+        The remote end.
+    </description>
+    <author email="5658514@qq.com" href="https://caner.top">
+        Caner
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android" value="app">
+        <allow-intent href="market:*" />
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        </config-file>    
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <activity android:usesCleartextTraffic="true" />
+        </edit-config>
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="android-targetSdkVersion" value="30" />
+        <!-- 图标 -->
+        <icon density="ldpi" src="res/icon/android/ldpi/icon.png" />
+        <icon density="mdpi" src="res/icon/android/mdpi/icon.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi/icon.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi/icon.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi/icon.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi/icon.png" />                
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
