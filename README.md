@@ -32,6 +32,10 @@
 2. cordova build android 即可得到 debug 包
 3. 安卓 debug.apk 包即可
 
-#### more
+### more
 
 1. 摇杆|手柄控制请参考https://git.caner.top/Caner/ESP8266-PS-Contrl
+
+### 后续
+
+    更多使用方法会在抖音更新：Caner
