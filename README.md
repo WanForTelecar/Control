@@ -21,16 +21,12 @@
 
 ### PC 教程
 
-1. cd Client.html
-2. npm install
-3. npm run build
-4. 找到 www 目录，上传至服务器即可
+1. 找到 www 目录，上传至服务器即可
 
 ### android 教程
 
-1. 执行完 PC 的步骤
-2. cordova build android 即可得到 debug 包
-3. 安卓 debug.apk 包即可
+1. cordova build android 即可得到 debug 包
+2. 安卓 debug.apk 包即可
 
 ### more
 
